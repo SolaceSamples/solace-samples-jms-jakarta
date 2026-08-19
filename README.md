@@ -1,11 +1,9 @@
-[![Build Status](https://travis-ci.org/SolaceSamples/solace-samples-jms.svg?branch=master)](https://travis-ci.org/SolaceSamples/solace-samples-jms)
-
 # Getting Started Examples
 ## Solace Jakarta Messaging API
 
 These samples use the [Jakarta Messaging API](https://jakarta.ee/specifications/messaging/) (`jakarta.jms` namespace) via Solace's `sol-jms-jakarta` library.
 
-> **You can find the legacy `javax.jms` samples** at the [`javax.jms-implementation`](https://github.com/SolaceSamples/solace-samples-jms/tree/javax.jms-implementation) branch.
+> **You can find the legacy `javax.jms` samples** at the [`javax.jms-implementation`](https://github.com/SolaceSamples/solace-samples-jms-jakarta/tree/javax.jms-implementation) branch.
 
 The "Getting Started" tutorials will get you up to speed and sending messages with Solace technology as quickly as possible. There are three ways you can get started:
 
@@ -15,7 +13,7 @@ The "Getting Started" tutorials will get you up to speed and sending messages wi
 
 ## Contents
 
-This repository contains code and matching tutorial walk throughs for basic Solace messaging patterns. For a nice introduction to the Solace API and associated tutorials, check out the [Getting Started Home Page](https://dev.solace.com/samples/solace-samples-jms/).
+This repository contains code and matching tutorial walk throughs for basic Solace messaging patterns. For a nice introduction to the Solace API and associated tutorials, check out the [Solace JMS Tutorials](https://tutorials.solace.dev/jms/).
 
 See the individual tutorials for details:
 
@@ -57,7 +55,7 @@ Just clone and build. For example:
 
 To try individual samples, build the project from source and then run samples like the following:
 
-    ./build/staged/bin/topicPublisher <msg_backbone_ip:port>
+    ./build/staged/bin/topicPublisher <host:port> <client-username@message-vpn> <client-password>
 
 The individual tutorials linked above provide full details which can walk you through the samples, what they do, and how to correctly run them to explore Solace messaging.
 
@@ -77,7 +75,7 @@ Once complete, you may then import the projects into Eclipse as usual:
 
  *File -> Import -> Existing projects into workspace*
 
-Browse to the *'solace-samples-jms'* root directory. All projects should import
+Browse to the *'solace-samples-jms-jakarta'* root directory. All projects should import
 free of errors.
 
 #### Using IntelliJ IDEA
@@ -92,7 +90,7 @@ This repository also includes samples demonstrating serialization and deserializ
 - Avro SERDES: Learn how to serialize and deserialize messages using Avro schemas
 - JSON Schema SERDES: Learn how to serialize and deserialize messages using JSON Schema validation
 
-For detailed information about SERDES samples, Schema Registry setup, and schema upload instructions, see the [SERDES README](src/main/java/com/solace/samples/features/serdes/README.md).
+For detailed information about SERDES samples, Schema Registry setup, and schema upload instructions, see the [SERDES README](src/main/java/com/solace/samples/jakarta/messaging/features/serdes/README.md).
 
 ## Contributing
 
@@ -100,7 +98,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-See the list of [contributors](https://github.com/SolaceSamples/solace-samples-jms/contributors) who participated in this project.
+See the list of [contributors](https://github.com/SolaceSamples/solace-samples-jms-jakarta/contributors) who participated in this project.
 
 ## License
 
