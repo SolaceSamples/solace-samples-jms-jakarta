@@ -45,7 +45,7 @@ import jakarta.jms.TextMessage;
 /**
  * Sends a persistent message to a queue using Solace Jakarta Messaging API implementation.
  * <p>
- * Setup a Solace PubSub+ Broker and OpenTelemetry Collector as per tutorial  >
+ * Setup a Solace Event Broker and OpenTelemetry Collector as per tutorial  >
  * https://codelabs.solace.dev/codelabs/dt-otel/index.html
  * <p>
  * The queue used for messages must have been created on the message broker.
